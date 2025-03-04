@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35312.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JwtSecuredNet8API", "JwtSecuredNet8API\JwtSecuredNet8API.csproj", "{A42DE3CD-E56F-4BBC-8B60-EDF514EC3CCE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A42DE3CD-E56F-4BBC-8B60-EDF514EC3CCE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A42DE3CD-E56F-4BBC-8B60-EDF514EC3CCE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A42DE3CD-E56F-4BBC-8B60-EDF514EC3CCE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A42DE3CD-E56F-4BBC-8B60-EDF514EC3CCE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4BB6A1BC-A7CC-4FB1-A4AA-9A2673FE81B9}
+	EndGlobalSection
+EndGlobal
