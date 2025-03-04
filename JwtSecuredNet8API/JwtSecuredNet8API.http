@@ -1,0 +1,6 @@
+@JwtSecuredNet8API_HostAddress = http://localhost:5182
+
+GET {{JwtSecuredNet8API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
