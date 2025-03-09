@@ -1,9 +1,12 @@
+using JwtSecuredNet8API.Entity;
 using JwtSecuredNet8API.Services;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddSingleton<IOurHeroService, OurHeroService>();
+builder.Services.AddDbContext<OurHeroDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("OurHeroConnectionString")), ServiceLifetime.Singleton);
 
 
 builder.Services.AddControllers();

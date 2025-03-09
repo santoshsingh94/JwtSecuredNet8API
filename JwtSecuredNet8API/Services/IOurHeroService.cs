@@ -4,14 +4,14 @@ namespace JwtSecuredNet8API.Services
 {
     public interface IOurHeroService
     {
-        List<OurHero> GetAllHeros(bool? isActive);
+        Task<List<OurHero>> GetAllHeros(bool? isActive);
 
-        OurHero? GetHerosByID(int id);
+        Task<OurHero?> GetHerosByIDAsync(int id);
 
-        OurHero AddOurHero(AddUpdateOurHero obj);
+        Task<OurHero> AddOurHero(AddUpdateOurHero obj);
 
-        OurHero? UpdateOurHero(int id, AddUpdateOurHero obj);
+        Task<OurHero?> UpdateOurHero(int id, AddUpdateOurHero obj);
 
-        bool DeleteHerosByID(int id);
+        Task<bool> DeleteHerosByID(int id);
     }
 }
