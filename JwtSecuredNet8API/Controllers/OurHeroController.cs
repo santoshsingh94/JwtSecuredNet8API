@@ -1,4 +1,5 @@
-﻿using JwtSecuredNet8API.Model;
+﻿using JwtSecuredNet8API.Helpers;
+using JwtSecuredNet8API.Model;
 using JwtSecuredNet8API.Services;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -7,6 +8,7 @@ namespace JwtSecuredNet8API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class OurHeroController : ControllerBase
     {
         private readonly IOurHeroService _heroService;

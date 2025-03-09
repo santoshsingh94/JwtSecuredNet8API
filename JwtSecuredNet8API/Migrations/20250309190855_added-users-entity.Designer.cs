@@ -3,6 +3,7 @@ using JwtSecuredNet8API.Entity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace JwtSecuredNet8API.Migrations
 {
     [DbContext(typeof(OurHeroDbContext))]
-    partial class OurHeroDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250309190855_added-users-entity")]
+    partial class addedusersentity
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

@@ -10,6 +10,7 @@ namespace JwtSecuredNet8API.Entity
         }
 
         public DbSet<OurHero> OurHeros { get; set; }
+        public DbSet<User> Users { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -24,6 +25,16 @@ namespace JwtSecuredNet8API.Entity
                     FirstName = "System",
                     LastName = "",
                     isActive = true,
+                }
+            );
+            modelBuilder.Entity<User>().HasData(
+                new User
+                {
+                    Id = 1,
+                    FirstName = "System",
+                    LastName = "",
+                    Username = "System",
+                    Password = "System",
                 }
             );
         }
